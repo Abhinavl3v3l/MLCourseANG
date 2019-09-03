@@ -21,14 +21,14 @@
      - Driving cars
      - Playing a board game
 2. **Supervised Learning** : APPROXIMATION
-1. **Condition** : We have an existing dataset with output/result.
+1. **Condition** : We have an existing data-set with output/result.
    2. **TL;DR** Data, Direct Feedback, Predict Outcome/Future.
    3. Supervised Learning follows the model  $\theta X\rightarrow Y$
    4. Where $\theta$ is a feature and $X,Y \in \real$
-   5. Supervised Learning when a program is trained on a dataset in which $X$ and $Y$ are known and  $\theta$'s' are gained as  result of training. 
-   6.  Dataset is usually divided into **training** and **test** data set
+   5. Supervised Learning when a program is trained on a data-set in which $X$ and $Y$ are known and  $\theta$'s' are gained as  result of training. 
+   6.  Data-set is usually divided into **training** and **test** data set
    7. **Training Data** : Data is trained on this data set and a learning model is achieved
-   8. **Test Data** :  Model achieved is tested on this dataset to measure the performance.
+   8. **Test Data** :  Model achieved is tested on this data-set to measure the performance.
    9. Output $Y$ can be continuous or discrete  value
    10. If its continuous we are trying to map output into a continuous function. For example 
        1. price of house based on input being size hence predicting price of house is function of size.
@@ -38,12 +38,12 @@
    13. Such problem with discrete classifiable outputs are called **Classification Problems**
    
 3. **Unsupervised Learning** : Description
-   1. **Condition** - We have a dataset with no output/result.
+   1. **Condition** - We have a data-set with no output/result.
    2. **TL;DR** : No Labels, No Feedback, Find Hidden Structures in Data
-      1. Unsupervised learning is like having no knowledge of data, and categorizing based on different features which is common among them. Like differentiating between 2 legged and 4 legged animals. But which are different tables/chairs or a pen.
+      1. Unsupervised learning is like having no knowledge of data, and categorising based on different features which is common among them. Like differentiating between 2 legged and 4 legged animals. But which are different tables/chairs or a pen.
       2. Such can be done on with images, sounds, text too.
       3. 
-   3. Unsupervised learning make sense of unlabeled data and group them together.
+   3. Unsupervised learning make sense of unlabelled data and group them together.
 
 #### 2. Model and Cost Function - Supervised Learning
 
@@ -71,11 +71,14 @@
 
 3. Cost Function -  
    
-   1. Accuracy of $h$/function  measured using a **cost function**. A random function with input variable and attributes($\theta$) will give a very bad result
-   2. A feed back system can help direct the function to right direction.
-   3. A cost function is a feedback system where we take an average difference between the predicted output and actual output try to minimize the difference.
-   4. Intuition I
-   5. Intuition II
+   1. A $h$/function has variables : features$(\theta)$ and input data variables$(x^i)$ 
+   2. Random features are usually are assigned, data variables from data-set are constant.
+   3. Accuracy of $h$/function measured using a **cost function**. 
+   4. As a the function 
+   5. A feed back system can help direct the function to right direction.
+   6. A cost function is a feedback system where we take an average difference between the predicted output and actual output try to minimize the difference.
+   7. Intuition I
+   8. Intuition II
 
 #### 3. Parameter Learning
 

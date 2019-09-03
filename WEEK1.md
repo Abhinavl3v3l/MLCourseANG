@@ -44,14 +44,38 @@
       2. Such can be done on with images, sounds, text too.
       3. 
    3. Unsupervised learning make sense of unlabeled data and group them together.
-   4. 
 
-#### 2. Model and Cost Function
+#### 2. Model and Cost Function - Supervised Learning
 
 1. Model Representation
-2. Cost Function
-   1. Intuition I
-   2. Intuition II
+
+   1. Input
+   $$
+   x^i \in X | i = 1...m
+   $$
+   2. Output  
+      $$
+      y^i \in Y | i= 1...m
+      $$
+      
+   3. Where $X,Y \in \real$ .
+      
+   4. Training Set
+      $$
+      (x^i, y^i) | i =1...m
+      $$
+
+   5. Given a Training set , learn a function $h: X \rightarrow Y$ so that $h(x)$ is a good predictor of $y$
+
+   6. **End goal** : ==**a function which can predict**==.
+
+3. Cost Function -  
+   
+   1. Accuracy of $h$/function  measured using a **cost function**. A random function with input variable and attributes($\theta$) will give a very bad result
+   2. A feed back system can help direct the function to right direction.
+   3. A cost function is a feedback system where we take an average difference between the predicted output and actual output try to minimize the difference.
+   4. Intuition I
+   5. Intuition II
 
 #### 3. Parameter Learning
 

@@ -71,14 +71,15 @@
 
 3. Cost Function -  
    
-   1. A $h$/function has variables : features$(\theta)$ and input data variables$(x^i)$ 
-   2. Random features are usually are assigned, data variables from data-set are constant.
-   3. Accuracy of $h$/function measured using a **cost function**. 
-   4. As a the function 
-   5. A feed back system can help direct the function to right direction.
-   6. A cost function is a feedback system where we take an average difference between the predicted output and actual output try to minimize the difference.
-   7. Intuition I
-   8. Intuition II
+   1. A $h_\theta$/function has variables : features$(\theta)$ and input data variables$(x^i)$ 
+      2. Random features are usually assigned, data variables from data-set are constant.
+      2. Function is modeled as the features are altered. Features are altered to increase accuracy using a feedback system. A feed back system can help direct the function to right direction.
+   2. Accuracy of $h_\theta$/function is  measured using a **cost function**. 
+      1. A cost function estimates by how far is the function from the expected output.
+      2. Cost function : Its absolute difference between the predicted out $h_\theta(x)$ and output $(y)$.
+      3. 
+   3. Idea - Choose $\theta$ such that $h_\theta(x)$ is close to $y$
+   4. _
 
 #### 3. Parameter Learning
 

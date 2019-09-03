@@ -72,20 +72,41 @@
 3. Cost Function -  
    
    1. A $h_\theta$/function has variables : features$(\theta)$ and input data variables$(x^i)$ 
+   
       2. Random features are usually assigned, data variables from data-set are constant.
       2. Function is modeled as the features are altered. Features are altered to increase accuracy using a feedback system. A feed back system can help direct the function to right direction.
+   
    2. Accuracy of $h_\theta$/function is  measured using a **cost function**. 
+   
       1. A cost function estimates by how far is the function from the expected output.
       2. Cost function : Its absolute difference between the predicted out $h_\theta(x)$ and output $(y)$.
       3. 
-   3. Idea - Choose $\theta$ such that $h_\theta(x)$ is close to $y$
-   4. _
+   
+   3. **Idea** - **Choose $\theta$ such that $h_\theta(x)$ is close to $y$**
+   
+   4. Cost Function or Squared error function or Mean Squared Function - 
+      $$
+      J(\theta) = \frac{1}{2m}\sum_{i=1}^m  (h_\theta(x)-y)^2
+      $$
+      
+   5. A visual representation
+   
+       ![Imagine x and y](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/_B8TJZtREea33w76dwnDIg_3e3d4433e32478f8df446d0b6da26c27_Screenshot-2016-10-26-00.57.56.png?expiry=1567641600000&hmac=xkJZfIeOCAKVNKYZqTCtNnwm9_iHKLHXrkCd-_Q7SeM)
+   
+   6. Altering $\theta$ 
+   
+      ![Variable $\theta$](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/8guexptSEeanbxIMvDC87g_3d86874dfd37b8e3c53c9f6cfa94676c_Screenshot-2016-10-26-01.03.07.png?expiry=1567641600000&hmac=8MP1j8ECYM9eq2DxmO9KUEiDmis-aHLBAjl4AstUGPQ)
+   
+   7. Finding the minimum $\theta$
+   
+      ![img](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/fph0S5tTEeajtg5TyD0vYA_9b28bdfeb34b2d4914d0b64903735cf1_Screenshot-2016-10-26-01.09.05.png?expiry=1567641600000&hmac=0uBP3Q0Vy71-BTMuy-yDqhDjvHKQAam17IWRf1Dg9sc)ma
+   
+      
 
 #### 3. Parameter Learning
 
 1. Gradient Descent
-   1. Intuition I
-   2. For Linear Regression
+   1. 
 
 #### 4. Linear Algebra Review
 

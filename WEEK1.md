@@ -133,11 +133,33 @@
      - Negative slope : right to left descent, OR  If *f '*(*x*) > 0 ; then *f*(*x*) is increasing.
      - If *f '*(*x*) = 0 ; then *f*(*x*) is at a relative maximum or minimum.
 
-4. Gradient Descent find the slope of a function and moves towards the steepest descent.
+4. Gradient Descent : 
 
-5. 
+5. Partial Derivative $\frac{\part}{\part \theta}$ : Find the slope of a function , hence the direction towards the steepest descent.
 
-6. 
+6. $\alpha$ : The step/jump to take towards the direction of descent is decided  by learning rate $(\alpha)$ 
+
+   ![Gradient Descent](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/bn9SyaDIEeav5QpTGIv-Pg_0d06dca3d225f3de8b5a4a7e92254153_Screenshot-2016-11-01-23.48.26.png?expiry=1567728000000&hmac=OIGD1Z3ocfo90QKsjTp5kxQHXaBAcYfkzHxNaw89bzM)
+
+7. Each step down and its relative jump is relative to $\alpha$ .
+
+8. Gradient descent algorithm is 
+
+   1. Repeat until Convergence: 
+
+       
+      $$
+      \theta_j := \theta_j - \alpha \frac{\part}{\part \theta_j}J(\theta_0,\theta_1)
+      $$
+      w
+
+9. A
+
+10. A
+
+11. A
+
+12. 
 
 #### 4. Linear Algebra Review
 

@@ -47,7 +47,7 @@
 
 #### 2. Model and Cost Function - Supervised Learning
 
-1. Model Representation
+1. **Model Representation**
 
    1. Input
    $$
@@ -69,7 +69,7 @@
 
    6. **End goal** : ==**a function which can predict**==.
 
-3. Cost Function -  
+3. **Cost Function** -  
    
    1. A $h_\theta$/function has variables : features$(\theta)$ and input data variables$(x^i)$ 
    
@@ -82,7 +82,7 @@
       2. Cost function : Its absolute difference between the predicted out $h_\theta(x)$ and output $(y)$.
       3. 
    
-   3. **Idea** - **Choose $\theta$ such that $h_\theta(x)$ is close to $y$**
+   3. **Idea** - **A feedback system that measure how well our hypothesis/function fits into data**
    
    4. Cost Function or Squared error function or Mean Squared Function - 
       $$
@@ -101,12 +101,43 @@
    
       ![img](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/fph0S5tTEeajtg5TyD0vYA_9b28bdfeb34b2d4914d0b64903735cf1_Screenshot-2016-10-26-01.09.05.png?expiry=1567641600000&hmac=0uBP3Q0Vy71-BTMuy-yDqhDjvHKQAam17IWRf1Dg9sc)ma
    
+   8. Table below represents the 
       
+   | **$\theta_1$** | **$x^i$** | **$h_\theta(x^i)$** | **$J(\theta)_1​**$ |
+   | -------------- | --------- | ------------------- | ----------------- |
+   | 0              | 1,2,3     | 0.5,1,1.5           | 0.5               |
+   | 1              | 1,2,3     | 1,2,3               | 0                 |
+   | 2              | 1,2,3     | 2,4,6               | 1                 |
+   
+   ​    
+   
+   10. 
+       
+       
+   
 
 #### 3. Parameter Learning
 
-1. Gradient Descent
-   1. 
+1. Gradient Descent - **Estimate $\theta$ such that $h_\theta(x)$ is close to $y$**
+
+   1. Usually gradient descent starts from a random $\theta$ values. Cost function calculates its place from the expected output. 
+   2. At this point we need to minimize difference between $h_\theta(x^i)$ and $y^i$
+   3. Only way to do is to change the $\theta$ values. Gradient Descent helps decide this value.
+
+2. Objective : Find the steepest descent.(Optimization Problem)
+
+3. [Slope Concept]: https://www.mathplanet.com/education/pre-algebra/graphing-and-functions/the-slope-of-a-linear-function	"Slope Concept"
+
+   - First Derivative of a function will give Slope of that function- Positive or Negative	
+     - Positive Slope  : left to right descent OR  If *f '*(*x*) < 0 ; then *f*(*x*) is decreasing.
+     - Negative slope : right to left descent, OR  If *f '*(*x*) > 0 ; then *f*(*x*) is increasing.
+     - If *f '*(*x*) = 0 ; then *f*(*x*) is at a relative maximum or minimum.
+
+4. Gradient Descent find the slope of a function and moves towards the steepest descent.
+
+5. 
+
+6. 
 
 #### 4. Linear Algebra Review
 

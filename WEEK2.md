@@ -42,26 +42,31 @@ A multivariate gradient descent can be written as :
 
 
 $$
-\begin{align*} & \text{repeat until convergence:} \; \lbrace \newline \; & \theta_0 := \theta_0 - \alpha \frac{1}{m} \sum\limits_{i=1}^{m} (h_\theta(x^{(i)}) - y^{(i)}) \cdot x_0^{(i)}\newline \; & \theta_1 := \theta_1 - \alpha \frac{1}{m} \sum\limits_{i=1}^{m} (h_\theta(x^{(i)}) - y^{(i)}) \cdot x_1^{(i)} \newline \; & \theta_2 := \theta_2 - \alpha \frac{1}{m} \sum\limits_{i=1}^{m} (h_\theta(x^{(i)}) - y^{(i)}) \cdot x_2^{(i)} \newline & \cdots \newline \rbrace \end{align*}
+\begin{align*} & \text{repeat until optimization:} \; \lbrace \newline \; & \theta_0 := \theta_0 - \alpha \frac{1}{m} \sum\limits_{i=1}^{m} (h_\theta(x^{(i)}) - y^{(i)}) \cdot x_0^{(i)}\newline \; & \theta_1 := \theta_1 - \alpha \frac{1}{m} \sum\limits_{i=1}^{m} (h_\theta(x^{(i)}) - y^{(i)}) \cdot x_1^{(i)} \newline \; & \theta_2 := \theta_2 - \alpha \frac{1}{m} \sum\limits_{i=1}^{m} (h_\theta(x^{(i)}) - y^{(i)}) \cdot x_2^{(i)} \newline & \cdots \newline \rbrace \end{align*}
 $$
 
 
 Hence formulated as : 
 $$
-\begin{align*}& \text{repeat until convergence:} \; \lbrace \newline \; & \theta_j := \theta_j - \alpha \frac{1}{m} \sum\limits_{i=1}^{m} (h_\theta(x^{(i)}) - y^{(i)}) \cdot x_j^{(i)} \; & \text{for j := 0...n}\newline \rbrace\end{align*}
+\begin{align*}& \text{repeat until optimization:} \; \lbrace \newline \; & \theta_j := \theta_j - \alpha \frac{1}{m} \sum\limits_{i=1}^{m} (h_\theta(x^{(i)}) - y^{(i)}) \cdot x_j^{(i)} \; & \text{for j := 0...n}\newline \rbrace\end{align*}
 $$
 
 
 
 
-### Feature Scaling 
+### Feature Scaling
 
 Why Feature Scaling ?  -  Makes Gradient Descent efficient. 
 
-How?  -  Less Oscillation till convergence
+How?  -  Less Oscillation till convergence else will oscillate inefficiently down to optimum 
 
 
 
-Convergence depends on $\alpha$ . A small $\alpha$ value converges slowly and in contrast a large value can shoot away from convergence and hence may take even longer or perhaps may never converge.
+Convergence depends on $\alpha$ . A small $\alpha$ value converges slowly and in contrast a large value can shoot away from convergence and hence may take even longer or perhaps may never converge. 
 
-Adding to this mix, huge scalar difference between features of a feature set will reduce the efficiency of the Gradient Descent algorithms
+Adding to this mix, uneven scalar difference between features of a feature set will reduce the efficiency of the Gradient Descent algorithms.
+
+
+
+1. Hence a appropriate steps ($\alpha$) is to be chosen.
+2. Difference between feature should be even

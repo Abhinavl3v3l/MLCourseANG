@@ -147,19 +147,37 @@
 
    1. Repeat until Convergence: 
 
-       
+      
       $$
       \theta_j := \theta_j - \alpha \frac{\part}{\part \theta_j}J(\theta_0,\theta_1)
       $$
-      w
+      
 
-9. A
+9. Hence for function 
+   $$
+   h_\theta(x) = \theta_0 +\theta_1x
+   $$
+   Gradient Descent would algorithm would be 
+   $$
+   \theta_0 := \theta_0 - \alpha \frac{\part}{\part\theta_0}J(\theta_0,\theta_1)
+   $$
 
-10. A
+   $$
+   \theta_1 := \theta_1 - \alpha \frac{\part}{\part\theta_1}J(\theta_0,\theta_1)
+   $$
 
-11. A
+    Expanding
+   $$
+   \theta_0 := \theta_0 - \alpha \frac{\part}{\part\theta_0}(\frac{1}{2m}\sum_{i=1}^m  ((\theta_0 +\theta_1x)-y)^2)
+   $$
 
-12. 
+   $$
+   \theta_1 := \theta_1 - \alpha \frac{\part}{\part\theta_1}\frac{1}{2m}\sum_{i=1}^m  ((\theta_0 +\theta_1x)-y)^2)
+   $$
+
+   
+
+   
 
 #### 4. Linear Algebra Review
 

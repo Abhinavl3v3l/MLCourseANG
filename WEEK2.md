@@ -54,19 +54,61 @@ $$
 
 
 
-### Feature Scaling
+### Feature Scaling and Learning Rate
 
-Why Feature Scaling ?  -  Makes Gradient Descent efficient. 
+Makes Gradient Descent efficient as there will be less oscillation till convergence else will oscillate inefficiently down to optimum. Convergence depends on $\alpha$ . A small $\alpha$ value converges slowly and in contrast a large value can shoot away from convergence and hence may take even longer or perhaps may never converge.  Adding to this mix, uneven scalar difference between features of a feature set will reduce the efficiency of the Gradient Descent algorithms.
 
-How?  -  Less Oscillation till convergence else will oscillate inefficiently down to optimum 
+1. Hence a appropriate steps, learning rate($\alpha$) is to be chosen.
+2. Difference between feature should be even 
+
+Feature Scaling Methods : 
+
+1. Feature Scaling
+2. Mean Normalisation
+
+### Features and Polynomial Regression 
+
+1. Frontage and depth  = Area, hence two feature can become one.
+2. Making a function polynomial, polynomial regression.
+
+Our hypothesis function need not be linear (a straight line) if that does not fit the data well.
+
+We can **change the behavior or curve** of our hypothesis function by making it a quadratic, cubic or square root function (or any other form).
+
+For example, if our hypothesis function is $ h_θ(x)=θ_0+ θ_1 x_1 $ then we can create additional features based on $x_1$, to get the quadratic function $h_θ(x)=θ_0+θ_1x_1+θ_2x_1^2 $ or the cubic function $hθ(x)=θ_0+θ_1x_1+θ_2x_1 ^2+θ_3x_1 ^3 $
+
+In the cubic version, we have created new features $x_2$ and $x_3$ where $x_2=x_1 ^2$ and $x_3=x_1 ^3$.
+
+To make it a square root function, we could do: $h_\theta(x) = \theta_0 + \theta_1 x_1 + \theta_2 \sqrt{x_1}$
+
+One important thing to keep in mind is, if you choose your features this way then feature scaling becomes very important.
+
+eg. if $x_1$has range 1 - 1000 then range of $x_1^2$ becomes 1 - 1000000 and that of $x_1^3$ becomes 1 - 1000000000
 
 
 
-Convergence depends on $\alpha$ . A small $\alpha$ value converges slowly and in contrast a large value can shoot away from convergence and hence may take even longer or perhaps may never converge. 
+## Computing Parameters Analytically
 
-Adding to this mix, uneven scalar difference between features of a feature set will reduce the efficiency of the Gradient Descent algorithms.
+**Normal Equation**  - 
+$$
+(X^TX)^{-1}X^Ty \tag{n}
+$$
+Will give the required $\theta$ needed.
+
+**Normal Equation vs Gradient Descent** - 
+
+| Gradient Descent           | Normal Equation                                |
+| -------------------------- | ---------------------------------------------- |
+| Need to choose alpha       | No need to choose alpha                        |
+| Needs many iterations      | No need to iterate                             |
+| $O (kn^2)$                 | $O (n^3)$, need to calculate inverse of $X^TX$ |
+| Works well when n is large | Slow if n is very large                        |
+| Feature Scaling Needed     | Feature Scaling Not Needed                     |
+
+With n $\geq $ 10,000  being the threshold to go from a normal solution to an iterative process.
 
 
 
-1. Hence a appropriate steps ($\alpha$) is to be chosen.
-2. Difference between feature should be even
+
+
+Normal Equation Non-Invertibility

@@ -185,14 +185,3 @@
    $$
 
    
-
-   
-
-#### 4. Linear Algebra Review
-
-1. Matrices and Vectors
-2. Addition and Scalar Multiplication
-3. Matrix Vector Multiplication
-4. Matrix Matrix Multiplication
-5. Matrix Multiplication Properties
-6. Inverse and Transpose

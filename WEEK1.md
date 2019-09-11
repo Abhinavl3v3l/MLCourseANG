@@ -168,11 +168,20 @@
 
     Expanding
    $$
-   \theta_0 := \theta_0 - \alpha \frac{\part}{\part\theta_0}(\frac{1}{2m}\sum_{i=1}^m  ((\theta_0 +\theta_1x)-y)^2)
+   \theta_0 := \theta_0 - \alpha \frac{\part}{\part\theta_0}(\frac{1}{2m}\sum_{i=1}^m  ((\theta_0 +\theta_1x^{(1)})-y)^2)
    $$
 
    $$
-   \theta_1 := \theta_1 - \alpha \frac{\part}{\part\theta_1}\frac{1}{2m}\sum_{i=1}^m  ((\theta_0 +\theta_1x)-y)^2)
+   \theta_1 := \theta_1 - \alpha \frac{\part}{\part\theta_1}\frac{1}{2m}\sum_{i=1}^m  ((\theta_0 +\theta_1x^{(1)})-y)^2)
+   $$
+
+   Applying partial derivative
+   $$
+   \theta_0 := \theta_0 - \frac{\alpha}{m}\sum_{i=1}^m  (\theta_0 +\theta_1 x^{(1)} -y)
+   $$
+
+   $$
+   \theta_1 := \theta_1 - \frac{\alpha}{m}\sum_{i=1}^m  (\theta_0 +\theta_1 x^{(1)} -y) x^{(1)}
    $$
 
    

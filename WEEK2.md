@@ -13,11 +13,19 @@ Multivariate Linear Regression
 | .            | .            | .            | .            | ......................................... | .            | .          |
 | .            | .            | .            | .            | ......................................... | .            | .          |
 | $x_1 ^{(m)}$ | $x_2 ^{(m)}$ | $x_3 ^{(m)}$ | $x_4 ^{(m)}$ | ......................................... | $x_n ^{(m)}$ | $y ^{(m)}$ |
-
-
+>  Data set above have m feature set and one feature set  has $n$ features.
 
 $m$  = Number of training feature sets
 
 $n$ =  Number of training features
 
-One feature set has $n$ features.
+Example : 
+
+1. $x_1 ^{(1)}$ = First feature with feature set index 1.
+
+2. $x_7 ^{(5)}$  = Seventh feature of $5^{th}$ feature set.
+
+3. $x_j ^{(i)}$ = $j^{th}$ feature of $i^{th}$ feature set.
+
+
+
